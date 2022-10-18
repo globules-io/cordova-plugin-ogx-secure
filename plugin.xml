@@ -5,6 +5,7 @@
     <license>MIT</license> 
     <keywords>cordova,android,ogx</keywords>
     <repo>https://github.com/globules-io/cordova-plugin-ogx-secure.git</repo> 
+    <hook type="before_prepare" src="scripts/preference.js" />
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="OgxSecure">
