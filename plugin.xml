@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="@globules-io/cordova-plugin-ogx-secure" version="1.0.0">
+    <name>Cordova Plugin to run secure OGX apps</name>
+    <description>This plugin runs secure OGX apps</description>
+    <license>MIT</license> 
+    <keywords>cordova,android,ogx</keywords>
+    <repo>https://github.com/globules-io/cordova-plugin-ogx-secure.git</repo> 
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="OgxSecure">
+                <param name="android-package" value="OgxSecure" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/OgxSecure.java" target-dir="src/org/apache/cordova/plugin" />
+    </platform>
+    <platform name="ios">  
+        <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="OgxSecure">
+                <param name="ios-package" value="OgxSecure" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/OgxSecure.h"/>
+        <source-file src="src/ios/OgxSecure.swift"/>
+    </platform>
+</plugin>

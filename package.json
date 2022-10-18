@@ -1,0 +1,29 @@
+{
+    "name": "@globules-io/cordova-plugin-ogx-secure",
+    "version": "1.0.0",
+    "description": "Cordova plugin to run secure ogx app",
+    "cordova": {
+        "id": "@globules-io/cordova-plugin-ogx-secure",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/globules-io/cordova-plugin-ogx-secure"
+    },
+    "keywords": [
+        "cordova",
+        "ecosystem:cordova",
+        "cordova-ios",
+        "cordova-android",
+        "ogx"
+    ],
+    "author": "globules.io",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/globules-io/cordova-plugin-ogx-secure/issues"
+    },
+    "homepage": "https://github.com/globules-io/cordova-plugin-ogx-secure#readme"
+}
